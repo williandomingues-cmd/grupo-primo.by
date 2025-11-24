@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechDev Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background: #0a1a2b;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        header nav a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 650px;
+        }
+        .btn-primary {
+            margin-top: 20px;
+            padding: 12px 28px;
+            background: #00aaff;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .services {
+            padding: 60px 40px;
+            background: #fff;
+        }
+        .services h2 {
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 40px;
+        }
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #f0f4f8;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        footer {
+            background: #0a1a2b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechDev Solutions</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Serviços</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header><section class="hero" id="home">
+    <div>
+        <h1>Desenvolvemos sistemas modernos e eficientes</h1>
+        <p>Somos especialistas em criar soluções tecnológicas sob medida para empresas que buscam inovação, automação e resultados reais.</p>
+        <a class="btn-primary" href="#contact">Solicitar Orçamento</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2>Nossos Serviços</h2>
+    <div class="service-cards">
+        <div class="card">
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites, sistemas e plataformas completas utilizando tecnologias modernas e escaláveis.</p>
+        </div>
+        <div class="card">
+            <h3>Aplicativos Mobile</h3>
+            <p>Apps intuitivos e rápidos para Android e iOS, feitos sob medida para o seu negócio.</p>
+        </div>
+        <div class="card">
+            <h3>Automação e Integrações</h3>
+            <p>Integrações entre sistemas, APIs, automações e otimização de processos internos.</p>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="about" style="background:#f5f7fa;">
+    <h2>Sobre Nós</h2>
+    <div style="max-width:800px; margin:auto; text-align:center;">
+        <p>A TechDev Solutions é uma empresa especializada no desenvolvimento de sistemas personalizados, com foco em eficiência, modernidade e resultados. Nossa equipe é formada por profissionais experientes que utilizam as melhores práticas de mercado para entregar soluções robustas e de alta performance.</p>
+    </div>
+</section>
+
+<section class="services" id="contact">
+    <h2>Contato</h2>
+    <div style="max-width:700px; margin:auto; text-align:center;">
+        <p>Entre em contato para solicitar um orçamento ou tirar dúvidas.</p>
+        <p><strong>E-mail:</strong> contato@techdev.com</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 TechDev Solutions - Todos os direitos reservados.</p>
+</footer>
