@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login + prismo.by</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .login-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #000;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #b30000;
+        }
+
+        header {
+            background: #0a1a2b;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                        url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+            padding: 12px 28px;
+            background: #00aaff;
+            border-radius: 6px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .services {
+            padding: 60px 40px;
+            background: #fff;
+        }
+
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #f0f4f8;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #0a1a2b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #site {
+            display: none;
+        }
+    </style>
+
+    <script>
+        function logar(event) {
+            event.preventDefault();
+
+            document.getElementById("login").style.display = "none";
+            document.getElementById("site").style.display = "block";
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <div id="login" class="login-page">
+        <div class="login-container">
+            <h2>Acesso do Usuário</h2>
+
+            <form onsubmit="logar(event)">
+                <div class="form-group">
+                    <label for="usuario">Gmail:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu Gmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="site">
+        <header>
+            <h1>Prismo.by</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#services">Serviços</a>
+                <a href="#about">Sobre</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </header>
+
+        <section class="hero" id="home">
+            <div>
+                <h1>Desenvolvemos sistemas modernos e eficientes</h1>
+                <p>Somos especialistas em criar soluções tecnológicas sob medida para empresas que buscam inovação, automação e resultados reais.</p>
+                <a class="btn-primary" href="#contact">Solicitar contato</a>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites, sistemas e plataformas completas utilizando tecnologias modernas e escaláveis.</p>
+                </div>
+                <div class="card">
+                    <h3>Aplicativos Mobile</h3>
+                    <p>Apps intuitivos e rápidos para Android e iOS, feitos sob medida para o seu negócio.</p>
+                </div>
+                <div class="card">
+                    <h3>Automação e Integrações</h3>
+                    <p>Integrações entre sistemas, APIs, automações e otimização de processos internos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="about" style="background:#f5f7fa;">
+            <h2>Sobre Nós</h2>
+            <div style="max-width:800px; margin:auto; text-align:center;">
+                <p>A prismo.by é uma empresa especializada no desenvolvimento de sistemas personalizados,
+                    com foco em eficiência, modernidade e resultados. Nossa equipe é formada por profissionais experientes
+                    e utiliza práticas modernas para entregar soluções de alta performance.</p>
+            </div>
+        </section>
+
+        <section class="services" id="contact">
+            <h2>Contato</h2>
+            <div style="max-width:700px; margin:auto; text-align:center;">
+                <p>Entre em contato para solicitar um orçamento ou tirar dúvidas.</p>
+                <p><strong>E-mail:</strong> prismo.by@gmail.com</p>
+                <p><strong>Telefone:</strong> (11) 99146-6434</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Prismo.by - Todos os direitos reservados.</p>
+        </footer>
+    </div>
