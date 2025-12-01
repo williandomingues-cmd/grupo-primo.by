@@ -1,2 +1,2 @@
 Nome da empresa: Prismo.by
-Integrantes: Raul, Matheus, José, William
+Integrantes: Raul, Mateus, yrlan, William
