@@ -1,2 +1,11 @@
-Nome da empresa: Prismo.by
-Integrantes: Raul, Mateus, yrlan, William
+Prismo.by
+
+👥 Integrantes:
+
+Raul
+
+Matheus
+
+José
+
+William
