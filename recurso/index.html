@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Abrir Canva</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4b7bec, #a55eea);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.4em;
+        }
+
+        button {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffffff;
+            color: #4b7bec;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        button:hover {
+            background-color: #dfe6e9;
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Abra o Canva com um clique</h1>
+        <button onclick="window.open('https://www.canva.com', '_blank')">
+            Abrir Canva
+        </button>
+    </div>
+
+</body>
+</html>
