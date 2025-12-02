@@ -329,3 +329,85 @@ button {
 button:hover {
   background-color: #b30000;
 }
+        .login-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(6px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .login-container {
+            background: #111;
+            padding: 35px;
+            width: 330px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+            animation: abrir 0.25s ease;
+            color: white;
+        }
+
+        @keyframes abrir {
+            from { transform: scale(0.8); opacity: 0; }
+            to   { transform: scale(1); opacity: 1; }
+        }
+
+        .close {
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+            color: #ccc;
+        }
+        .close:hover {
+            color: white;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            background: #222;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: linear-gradient(45deg, #006eff, #00c9ff);
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-container button:hover {
+            transform: scale(1.03);
+            opacity: 0.9;
+        }
+
+        #dev-area {
+            display: none;
+            padding: 50px;
+            background: #0a0a0a;
+            color: white;
+            min-height: 100vh;
+        }
+
+        #dev-area h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
